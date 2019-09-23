@@ -4,11 +4,11 @@
 //
 //  Created by Charles Konkol on 2/9/15.
 //  Copyright (c) 2017 Rock Valley College. All rights reserved.
-//
+//  Updated 9/2019 CK
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegate  {
     
     //Outlets
     
@@ -100,6 +100,7 @@ class ViewController: UIViewController {
     // 4) Add MessageBox function using AlertView
     func MsgBox(_ message:String)
     {
+        //Add Below Code from "Code for Steps.txt". Fulfill Each Comment With Code
         //Create Alert
         let alert = UIAlertView()
         alert.title = "Alert"
@@ -134,7 +135,7 @@ class ViewController: UIViewController {
     }
     
     //  7) Add textFieldShouldReturn function. This is called when 'return' key pressed on any UITextField. return NO to ignore.
-    func textFieldShouldReturn(_ textField: UITextField!) -> Bool     {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool     {
         //Add Below Code from "Code for Steps.txt". Read Comments
         
         textField.resignFirstResponder()
@@ -173,7 +174,7 @@ class ViewController: UIViewController {
         ScrollView.setContentOffset(CGPoint.zero, animated: true)
     }
     
-     // 12) Modify existing viewDidLoad function. Default Function to load when view is shown
+    // 12) Modify existing viewDidLoad function. Default Function to load when view is shown
     override func viewDidLoad() {
         super.viewDidLoad()
         
