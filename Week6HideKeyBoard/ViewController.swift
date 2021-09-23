@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  HideKeyBoard
 //
-//  caca
+//
 //  Created by Charles Konkol on 2/9/15.
 //  Copyright (c) 2017 Rock Valley College. All rights reserved.
 //  Updated 9/2019 CK
@@ -85,6 +85,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         
         //hide keyboard
         DismissKeyboard()
+        
         
         //declare CGPoint scrollPoint
         var scrollPoint:CGPoint
