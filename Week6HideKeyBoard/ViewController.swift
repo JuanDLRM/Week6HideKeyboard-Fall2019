@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  HideKeyBoard
 //
-//
 //  Created by Charles Konkol on 2/9/15.
 //  Copyright (c) 2017 Rock Valley College. All rights reserved.
 //  Updated 9/2019 CK
@@ -35,6 +34,8 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
     
     
     //  2 Modify btnSave function. Validates UITextfields have content, formats text to place in UITextView txtView, Goes to location of btnBack button.
+    
+    
     @IBAction func btnSave(_ sender: UIButton) {
         //Add Below Code from "Code for Steps.txt". Fulfill Each Comment With Code
         
@@ -85,7 +86,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, UITextFieldDelegat
         
         //hide keyboard
         DismissKeyboard()
-        
         
         //declare CGPoint scrollPoint
         var scrollPoint:CGPoint
